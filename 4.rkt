@@ -8,8 +8,10 @@
 ; Examples:
 ; (tip 10 0.15)  => 1.5
 ; (tip 20 0.17)  => 3.4
+(require rackunit)
 (define (tip dollars percent)
   (/ (round (* (* dollars percent) 100)) 100))
-(tip 10 0.15)
-(tip 20 0.17)
-(tip 1 0.0875)
+; Tests
+(check-equal? (tip 10 0.15) 1.5)
+(check-equal? (tip 20 0.17) 3.4)
+(check-equal? (tip 1 0.0875) 0.09)

@@ -7,8 +7,9 @@
 ; Examples:
 ; (f->c 32)  => 0
 ; (f->c 100) => 37.77777777777777....
+(require rackunit)
 (define (f->c f)
   (* (- f 32) (/ 5 9)))
-(f->c 32)
-(f->c 100)
+(check-equal? (f->c 32) 0)
+(check-equal? (f->c 100) (* 68 (/ 5 9)))
 ; The repeating 7 is displayed as a bar over the 7.

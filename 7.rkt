@@ -7,8 +7,10 @@
 ; Examples:
 ; (circumference 1)  =>  2*pi
 ; (circumference 0)  =>  0
+(require rackunit)
 (define (circumference radius)
   (* 2 pi radius))
-(circumference 1)
-(circumference 0)
+; Tests
+(check-equal? (circumference 1) (* 2 pi))
+(check-equal? (circumference 0) 0)
 ; The value of twice pi has an "i" for "inexact."
