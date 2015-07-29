@@ -9,3 +9,4 @@ Exercise 8 11:07-11:10
 Exercise 9 11:10-11:24
 Exercise 10 11:24-11:30
 Git exercise (needs updating!) 11:30-12:20
+Updated some tests, git 4:44-4:55
