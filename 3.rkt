@@ -10,6 +10,7 @@
 (require rackunit)
 (define (f->c f)
   (* (- f 32) (/ 5 9)))
+; Tests
 (check-equal? (f->c 32) 0)
 (check-equal? (f->c 100) (* 68 (/ 5 9)))
 ; The repeating 7 is displayed as a bar over the 7.
