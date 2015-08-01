@@ -9,3 +9,22 @@
 ; (quadratic-root 1 -1 -12) => 4  ((x-4) * (x+3))
 (define (quadratic-root a b c)
   (/ (+ (* -1 b) (sqrt (- (* b b) (* 4 a c)))) (* 2 a)))
+
+;; you could also have written (- 0 b) or (- b).
+;; This is also long enough that it would be clearer if it were
+;; indented:
+
+(define (quadratic-root2 a b c)
+  (/ (+ (* -1 b) (sqrt (- (* b b) (* 4 a c)))) 
+    (* 2 a)))
+
+;; or even
+
+(define (quadratic-root3 a b c)
+  (/ (+ (* -1 b) 
+       (sqrt (- (* b b) (* 4 a c)))) 
+    (* 2 a)))
+
+;; DrRacket will do the indentation for you automatically.  I used one
+;; of the emacs indenters, which gives somewhat different
+;; indentations, but any will do.

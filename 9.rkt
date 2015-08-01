@@ -14,3 +14,5 @@
   (if (= (remainder n 2) 0)
       true
       false))
+
+;; same comment about (if <condition> true false).

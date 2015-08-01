@@ -14,3 +14,11 @@
 (check-equal? (circumference 1) (* 2 pi))
 (check-equal? (circumference 0) 0)
 ; The value of twice pi has an "i" for "inexact."
+
+;; Racket uses rational arithmetic by default, for which equality is
+;; exact.  When dealing with real (inexact) numbers like pi, you
+;; should use check-= instead, which takes a tolerance.   You got away
+;; without this here, but unless the computations are exactly alike,
+;; you'll have to deal with tolerances, eg
+
+(check-= (sqrt 2) 1.414 0.001)
