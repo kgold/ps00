@@ -1,0 +1,15 @@
+*~
+#*#
+.#*
+*.bak
+.svn
+*.log
+~$*
+*.1
+*.2
+auto
+compiled
+*.stackdump
+_gsdata_
+
+

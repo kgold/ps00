@@ -15,3 +15,10 @@
 (check-equal? (tip 10 0.15) 1.5)
 (check-equal? (tip 20 0.17) 3.4)
 (check-equal? (tip 1 0.0875) 0.09)
+
+;; use information-centric names for variables, eg
+;; (define (bill tip-rate) ...)
+
+;; also, the problem doesn't say anything about rounding the tip to
+;; the nearest penny, so the stuff about rounding is unnecessary (and
+;; who knows whether it would confuse an automated grading program.)

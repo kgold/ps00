@@ -5,3 +5,6 @@
        (/ (+ 100 3) (+ 3 3)))
     true
     false)
+
+;;MW:  (if <condition> true false) should be replaced by <condition>
+

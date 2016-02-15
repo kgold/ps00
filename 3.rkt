@@ -14,3 +14,7 @@
 (check-equal? (f->c 32) 0)
 (check-equal? (f->c 100) (* 68 (/ 5 9)))
 ; The repeating 7 is displayed as a bar over the 7.
+
+;;MW: Racket by default uses rational arithmetic.  Racket, including
+;;BSL, has rational constants.  So you could have written 5/9 instead
+;;of (/ 5 9).
